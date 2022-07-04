@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+/* ==============> Reset page <======================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue--: #0056D7;
+    --blue-link--: #0066FF;
+    --text-black-- : #333333;
+    --text-input--: #757575;
+    --border-input-- : #D8D8D8;
+}
+
+body{
+    font-family: "Poppins";
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button{
+    border: none;
+    outline: none;
+}
+
+/* ==============> Aplicando display grid <======================*/
+#main-content{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 465px 1fr;
+}
+
+/* ==============> Estilizando a imagem ilustrativa da page <======================*/
+#main-content .aside-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==============> Estilizando seção de login <======================*/
+.login-area header{
+   position: fixed;
+   right: 0;
+
+   display: flex;
+   align-items: center;
+   gap: 0.4rem;
+   margin-top: 1.875rem;
+   margin-right: 11.25rem;
+}
+
+.login-area header p{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-black--);
+}
+
+.login-area header a{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #0056D7;
+}
+
+section form{
+    margin-top: 5rem;
+    margin-left: 11.875rem;
+}
+
+.title-form h1{
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--text-black--);
+}
+
+.input-form .input-email, .input-form .input-password{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+}
+
+.input-email{
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.input-email label, .input-password label{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-black--);
+}
+
+.input-email input,  .input-password input{
+    width: 21.875rem;
+    height: 2.5rem;
+    padding: 1rem;
+
+    border: 1px solid var(--border-input--);
+    border-radius: 4px;
+}
+
+.input-email input::placeholder,  .input-password input::placeholder{
+    font-size: 0.75rem;
+    color: var(--text-input--);
+}
+
+.input-email input:hover, .input-password input:hover{
+    outline: 2px solid #0056D7;
+}
+
+.submit{
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.submit .button-submit{
+    width: 21.875rem;
+    height: 2.5rem;
+
+    background: var(--blue--);
+    border-radius: 4px;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+
+    transition: filter 0.4s;
+}
+
+.submit a{
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #0066FF;
+}
+
+.submit .button-submit:hover{
+    filter: brightness(0.8);
+}
+
+.login-using strong{
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 10.3125rem;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--text-input--);
+}
+
+.login-using  h3{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-black--);
+}
+
+.login-using .account{
+    margin-top: 0.7rem;
+
+    display: flex;
+    gap: 0.7rem;
+}
